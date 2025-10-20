@@ -1,115 +1,62 @@
-<section class="container my-5">
-  <!-- 自動 1/2/3 欄，並加 g-4 間距 -->
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card .card-text {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- 起源 -->
-    <div class="col">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title text-center">起源</h5>
-          <p class="card-text">
-            虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
-            電影與小說描繪了人們以虛擬身分生活的情境；虛擬偶像則顯示以虛擬角色作為媒體主體的可行性，並讓動漫畫風格成為主流形式之一。
-            動畫作品也探討了虛擬與現實的邊界與互動，反映虛擬演藝者在平台上的處境。
-          </p>
-        </div>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">vtuber</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">服務</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- 歷史（收合） -->
-    <div class="col">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title text-center">歷史</h5>
-
-          <p class="card-text mb-2"><strong>虛擬人物的起源</strong><br>
-            虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
-          </p>
-
-          <a class="btn btn-outline-primary btn-sm mb-3" data-bs-toggle="collapse" href="#histMore" role="button" aria-expanded="false" aria-controls="histMore">
-            展開更多
-          </a>
-
-          <div class="collapse" id="histMore">
-            <ul class="card-text">
-              <li><strong>2002 年</strong>　美國電影《虛擬偶像》描述以電腦影像製作虛擬演藝人員。</li>
-              <li><strong>2012 年</strong>　小說《一級玩家》描繪人們以虛擬身分生活的情境。</li>
-              <li><strong>2007 年</strong>　初音未來的出現，證明虛擬偶像的可行性。</li>
-              <li><strong>2021 年</strong>　動畫《龍與雀斑公主》探討虛擬與現實的界線。</li>
-            </ul>
-
-            <p class="card-text"><strong>國際發展</strong><br>
-              <strong>2019 年</strong>　絆愛與國際影視人士合作，象徵虛擬角色進入主流娛樂。
-            </p>
-            <ul class="card-text">
-              <li><strong>2020 年</strong>　VTuber 於 SuperChat 排行佔多數席次。</li>
-              <li><strong>2022 年</strong>　VTuber 月觀看次數躍升至數十億等級。</li>
-            </ul>
-
-            <p class="card-text"><strong>日本與名詞起源</strong><br>
-              <strong>2016 年</strong>　絆愛提出「虛擬 YouTuber」一詞，指動態捕捉＋電腦圖形結合真人表演的角色。
-            </p>
-            <ul class="card-text">
-              <li><strong>2017 年</strong>　電腦少女小白、未來明、輝夜月等登場，概念擴大。</li>
-            </ul>
-
-            <p class="card-text"><strong>媒體與品牌應用</strong></p>
-            <ul class="card-text">
-              <li>電視節目：如《VIRTUAL BUZZ TALK!》《超人女子戰士 Gariben Girl V》。</li>
-              <li>企業／地方角色：燦鳥 Nomu、根羽清心、茨日和等。</li>
-            </ul>
-
-            <p class="card-text"><strong>產業發展</strong></p>
-            <ul class="card-text">
-              <li><strong>2018 年</strong>　VTuber 約 3000 人。</li>
-              <li><strong>2019 年</strong>　VTuber 約 6000 人。</li>
-              <li><strong>2021 年</strong>　VTuber 超過 16000 人。</li>
-            </ul>
-
-            <p class="card-text mb-1">組織與事務所：</p>
-            <ul class="card-text">
-              <li>Upd8 / Nijisanji（彩虹社） / hololive / VSPO!（卟啵電競） / Neo-Porte</li>
-            </ul>
-
-            <p class="card-text"><strong>社會認知與文化地位</strong><br>
-              <strong>2018 年</strong>　成為網路流行語金獎；<strong>2019 年</strong>　在年輕族群中具高知名度。
-            </p>
-          </div>
-        </div>
-      </div>
+  <!-- 主視覺區塊 -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">歡迎來到 vtuber 簡介</h1>
+      <p class="lead text-muted">這是一個介紹 vtuber 文化的頁面。</p>
+      <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        了解更多
+      </button>
     </div>
+  </section>
 
-    <!-- Gawr Gura（有圖） -->
-    <div class="col">
-      <div class="card h-100 shadow-sm">
-        <!-- 圖片放在 card-body 外，使用 card-img-top -->
-        <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
-        <div class="card-body">
-          <h5 class="card-title text-center">Gawr Gura</h5>
-          <p class="card-text">
-            噶嗚·古拉（Gawr Gura）是英語 VTuber，隸屬 hololive production。以歌回與音樂遊戲見長，出道後迅速累積訂閱，曾為社內里程碑人物之一。
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal（把絕對 /RWD/ 改成相對路徑示例） -->
-  <div class="modal" id="Modalimg" tabindex="-1">
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal IMG</h5>
+          <h5 class="modal-title">了解</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="container">
-            <div class="row align-items-center">
-              <!-- 這裡用 Gawr_Gura.png 當示範，也可換成你的 jiao.jpg -->
-              <div class="col-6"><img src="Gawr_Gura.png" class="img-fluid" alt="示範圖"></div>
-              <div class="col-6">文字說明</div>
-            </div>
-          </div>
+          <p>這裡可以放更多介紹內容。</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -117,5 +64,98 @@
       </div>
     </div>
   </div>
-</section>
 
+  <!-- 三欄內容區 -->
+  <section class="container my-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+      <!-- 起源 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center">起源</h5>
+            <p class="card-text">
+              虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
+              電影與小說描繪了人們以虛擬身分生活的情境；虛擬偶像則顯示以虛擬角色作為媒體主體的可行性，並讓動漫畫風格成為主流形式之一。
+              動畫作品也探討了虛擬與現實的邊界與互動，反映虛擬演藝者在平台上的處境。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 歷史 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center">歷史</h5>
+            <p class="card-text">
+              <strong>虛擬人物的起源</strong><br>
+              虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
+            </p>
+
+            <a class="btn btn-outline-primary btn-sm mb-3" data-bs-toggle="collapse" href="#histMore" role="button" aria-expanded="false" aria-controls="histMore">
+              展開更多
+            </a>
+
+            <div class="collapse" id="histMore">
+              <ul class="card-text">
+                <li><strong>2002 年</strong> 《虛擬偶像》電影上映。</li>
+                <li><strong>2012 年</strong> 《一級玩家》小說問世。</li>
+                <li><strong>2007 年</strong> 初音未來誕生。</li>
+                <li><strong>2021 年</strong> 《龍與雀斑公主》上映。</li>
+              </ul>
+
+              <p class="card-text"><strong>國際發展</strong></p>
+              <ul class="card-text">
+                <li><strong>2019 年</strong> 絆愛與國際影視人士合作。</li>
+                <li><strong>2020 年</strong> VTuber 打賞排行佔多數。</li>
+                <li><strong>2022 年</strong> VTuber 月觀看數爆發。</li>
+              </ul>
+
+              <p class="card-text"><strong>日本與名詞起源</strong></p>
+              <ul class="card-text">
+                <li><strong>2016 年</strong> 絆愛提出「虛擬 YouTuber」概念。</li>
+                <li><strong>2017 年</strong> 多位 VTuber 登場。</li>
+              </ul>
+
+              <p class="card-text"><strong>組織與發展</strong></p>
+              <ul class="card-text">
+                <li>Upd8 / Nijisanji / hololive / VSPO! / Neo-Porte</li>
+              </ul>
+
+              <p class="card-text">
+                <strong>文化地位</strong><br>
+                <strong>2018 年</strong> 成為網路流行語金獎，
+                <strong>2019 年</strong> 在年輕族群中具有高知名度。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gawr Gura -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
+          <div class="card-body">
+            <h5 class="card-title text-center">Gawr Gura</h5>
+            <p class="card-text">
+              噶嗚·古拉（Gawr Gura）是英語 VTuber，隸屬 hololive production。
+              以歌回與音樂遊戲見長，出道後迅速累積訂閱，曾為社內里程碑人物之一。
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
