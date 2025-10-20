@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RWD</title>
-  <!-- Bootstrap 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     .card-img-top { height: 220px; object-fit: cover; }
@@ -13,7 +12,6 @@
 </head>
 <body>
 
-  <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">vtuber</a>
@@ -31,24 +29,22 @@
     </div>
   </nav>
 
-  <!-- 主視覺區塊 -->
   <section class="bg-light text-center py-5">
     <div class="container">
       <h1 class="display-5 fw-bold">歡迎來到 vtuber 簡介</h1>
-      <p class="lead text-muted">這是一個介紹 vtuber 文化的頁面。</p>
+      <p class="lead text-muted">本頁整理 vtuber 文化與代表人物的重點資訊。</p>
     </div>
   </section>
 
-  <!-- 頁面總覽 Modal（保留） -->
   <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">了解</h5>
+          <h5 class="modal-title" id="exampleModalLabel">更多資訊</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>這裡可以放更多整體介紹內容。</p>
+          <p>此網站簡要介紹 vtuber 的起源、發展與代表人物。內容將持續補充與更新。</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -57,17 +53,15 @@
     </div>
   </div>
 
-  <!-- 三欄內容區 -->
   <section class="container my-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-      <!-- 起源（卡片＋了解更多 Modal 按鈕） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title text-center">起源</h5>
             <p class="card-text">
-              虛擬人物概念始於網名／頭像，線上遊戲與賽博龐克推動虛擬形象發展……
+              虛擬人物的概念由網路暱稱與頭像發展而來。線上遊戲與賽博龐克作品推動了虛擬形象的應用與想像，之後逐步形成以虛擬角色為主體的內容創作。
             </p>
             <div class="text-end">
               <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalOrigin">
@@ -78,14 +72,13 @@
         </div>
       </div>
 
-      <!-- 歷史（保留原本的收合） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title text-center">歷史</h5>
             <p class="card-text">
               <strong>虛擬人物的起源</strong><br>
-              虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
+              早期以網名與頭像表現身分，隨後由遊戲與科幻作品擴展至更完整的虛擬形象。
             </p>
             <a class="btn btn-outline-primary btn-sm mb-3" data-bs-toggle="collapse" href="#histMore" role="button" aria-expanded="false" aria-controls="histMore">
               展開更多
@@ -93,48 +86,46 @@
 
             <div class="collapse" id="histMore">
               <ul class="card-text">
-                <li><strong>2002 年</strong> 《虛擬偶像》電影上映。</li>
-                <li><strong>2012 年</strong> 《一級玩家》小說問世。</li>
-                <li><strong>2007 年</strong> 初音未來誕生。</li>
-                <li><strong>2021 年</strong> 《龍與雀斑公主》上映。</li>
+                <li><strong>2002 年</strong> 電影《虛擬偶像》以電腦影像打造演藝人員。</li>
+                <li><strong>2012 年</strong> 小說《一級玩家》描繪虛擬身分的日常化。</li>
+                <li><strong>2007 年</strong> 初音未來帶動虛擬偶像風潮。</li>
+                <li><strong>2021 年</strong> 《龍與雀斑公主》討論虛擬與現實的邊界。</li>
               </ul>
 
               <p class="card-text"><strong>國際發展</strong></p>
               <ul class="card-text">
-                <li><strong>2019 年</strong> 絆愛與國際影視人士合作。</li>
-                <li><strong>2020 年</strong> VTuber 打賞排行佔多數。</li>
-                <li><strong>2022 年</strong> VTuber 月觀看數爆發。</li>
+                <li><strong>2019 年</strong> 絆愛與國際影視工作者合作。</li>
+                <li><strong>2020 年</strong> VTuber 在 SuperChat 排行名列前茅。</li>
+                <li><strong>2022 年</strong> VTuber 觀看量持續攀升。</li>
               </ul>
 
               <p class="card-text"><strong>日本與名詞起源</strong></p>
               <ul class="card-text">
-                <li><strong>2016 年</strong> 絆愛提出「虛擬 YouTuber」概念。</li>
-                <li><strong>2017 年</strong> 多位 VTuber 登場。</li>
+                <li><strong>2016 年</strong> 絆愛提出「虛擬 YouTuber」一詞。</li>
+                <li><strong>2017 年</strong> 多位創作者加入，概念普及。</li>
               </ul>
 
               <p class="card-text"><strong>組織與發展</strong></p>
               <ul class="card-text">
-                <li>Upd8 / Nijisanji / hololive / VSPO! / Neo-Porte</li>
+                <li>Upd8、Nijisanji、hololive、VSPO!、Neo-Porte 等團體相繼成立。</li>
               </ul>
 
               <p class="card-text">
                 <strong>文化地位</strong><br>
-                <strong>2018 年</strong> 成為網路流行語金獎，
-                <strong>2019 年</strong> 在年輕族群中具有高知名度。
+                <strong>2018 年</strong> 入選網路流行語金獎，<strong>2019 年</strong> 在年輕族群中具有高知名度。
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Gawr Gura（卡片＋了解更多 Modal 按鈕，Modal 內左圖右文） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
           <div class="card-body">
             <h5 class="card-title text-center">Gawr Gura</h5>
             <p class="card-text">
-              英語 VTuber，隸屬 hololive production；以歌回與音樂遊戲見長……
+              英語系 VTuber，隸屬 hololive production。以歌唱與音樂遊戲見長，頻道成長迅速，具有代表性。
             </p>
             <div class="text-end">
               <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGura">
@@ -148,9 +139,8 @@
     </div>
   </section>
 
-  <!-- 起源：詳情 Modal -->
   <div class="modal fade" id="modalOrigin" tabindex="-1" aria-labelledby="modalOriginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">  <!-- 大一點，看得舒服 -->
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalOriginLabel">起源 — 詳細內容</h5>
@@ -158,10 +148,7 @@
         </div>
         <div class="modal-body">
           <p class="mb-0">
-            虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
-            美國電影《虛擬偶像》描述以電腦影像打造虛擬演藝人員；小說《一級玩家》刻畫人們在虛擬世界以化身生活。
-            初音未來顯示以虛擬偶像為內容核心的可行性，並讓動漫畫風格成為主流形式之一。
-            動畫《龍與雀斑公主》探討虛擬與現實身分的邊界、網路與現實的互動，以及虛擬演藝者在平台上的處境。
+            虛擬人物源自網路暱稱與頭像，逐步演變為具備完整設定與表演的角色。線上遊戲與科幻作品擴大了虛擬形象的使用情境；相關影視與文學作品則提供了更具體的文化想像，讓虛擬角色走向主流。
           </p>
         </div>
         <div class="modal-footer">
@@ -171,7 +158,6 @@
     </div>
   </div>
 
-  <!-- Gawr Gura：詳情 Modal（左圖右文） -->
   <div class="modal fade" id="modalGura" tabindex="-1" aria-labelledby="modalGuraLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -183,14 +169,11 @@
           <div class="container-fluid">
             <div class="row g-3 align-items-start">
               <div class="col-md-6 text-center">
-                <!-- 也可改成 raw 連結避免相對路徑問題 -->
                 <img src="Gawr_Gura.png" class="img-fluid rounded" alt="Gawr Gura">
               </div>
               <div class="col-md-6">
                 <p>
-                  噶嗚·古拉（Gawr Gura）為英語系 VTuber，隸屬 hololive production。
-                  以歌回與音樂遊戲見長，出道後迅速累積訂閱，成為社內里程碑人物之一。
-                  其內容風格輕鬆活潑、互動性強，象徵 VTuber 國際化的重要代表。
+                  Gawr Gura 的內容以演唱、節奏與互動為主，個人風格鮮明。她的出現提升了英語圈對 VTuber 的關注度，也帶動國際社群的討論與參與，成為跨語系發展的代表案例。
                 </p>
               </div>
             </div>
@@ -203,13 +186,10 @@
     </div>
   </div>
 
-  <!-- 頁尾 -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
