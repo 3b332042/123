@@ -1,243 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RWD</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    </head>
-    <body>
+<section class="container my-5">
+  <!-- 自動 1/2/3 欄，並加 g-4 間距 -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-    <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-        <a class="navbar-brand" href="#">vtuber</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">服務</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
-            </ul>
+    <!-- 起源 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">起源</h5>
+          <p class="card-text">
+            虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
+            電影與小說描繪了人們以虛擬身分生活的情境；虛擬偶像則顯示以虛擬角色作為媒體主體的可行性，並讓動漫畫風格成為主流形式之一。
+            動畫作品也探討了虛擬與現實的邊界與互動，反映虛擬演藝者在平台上的處境。
+          </p>
         </div>
-        </div>
-    </nav>
-
-    <!-- 主視覺區塊 -->
-    <section class="bg-light text-center py-5">
-        <div class="container">
-        <h1 class="display-5 fw-bold">歡迎來到vtuber簡介
-        </h1>
-        <p class="lead text-muted">這是一個介紹vtuber文化的頁面。</p>
-        <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            了解更多
-        </button>
-        </div>
-    </section>
-
-    <div class="modal" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">了解</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <h1>更多。</h1>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
+      </div>
     </div>
 
-    <!-- 三欄內容區 -->
-    <section class="container my-5">
-    <div class="row text-center">
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">起源</h5>
-            <p class="card-text">虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。2002年的美國電影虛擬偶像描述了用電腦影像製作虛擬演藝人員來吸引觀眾、2012年的小說《一級玩家》描述人們主要以虛擬身分生活。2007年的初音未來進一步顯示這種作法的可行性，並著重於日式動漫畫的人物設計而非擬真。2021年的日本動畫電影《龍與雀斑公主》除了探討現實與虛擬身分的分界、網路空間和現實的互動影響、網路文化現象以外，也反映包含虛擬演藝人員在網路平台遭遇的處境。</p>
+    <!-- 歷史（收合） -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">歷史</h5>
+
+          <p class="card-text mb-2"><strong>虛擬人物的起源</strong><br>
+            虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
+          </p>
+
+          <a class="btn btn-outline-primary btn-sm mb-3" data-bs-toggle="collapse" href="#histMore" role="button" aria-expanded="false" aria-controls="histMore">
+            展開更多
+          </a>
+
+          <div class="collapse" id="histMore">
+            <ul class="card-text">
+              <li><strong>2002 年</strong>　美國電影《虛擬偶像》描述以電腦影像製作虛擬演藝人員。</li>
+              <li><strong>2012 年</strong>　小說《一級玩家》描繪人們以虛擬身分生活的情境。</li>
+              <li><strong>2007 年</strong>　初音未來的出現，證明虛擬偶像的可行性。</li>
+              <li><strong>2021 年</strong>　動畫《龍與雀斑公主》探討虛擬與現實的界線。</li>
+            </ul>
+
+            <p class="card-text"><strong>國際發展</strong><br>
+              <strong>2019 年</strong>　絆愛與國際影視人士合作，象徵虛擬角色進入主流娛樂。
+            </p>
+            <ul class="card-text">
+              <li><strong>2020 年</strong>　VTuber 於 SuperChat 排行佔多數席次。</li>
+              <li><strong>2022 年</strong>　VTuber 月觀看次數躍升至數十億等級。</li>
+            </ul>
+
+            <p class="card-text"><strong>日本與名詞起源</strong><br>
+              <strong>2016 年</strong>　絆愛提出「虛擬 YouTuber」一詞，指動態捕捉＋電腦圖形結合真人表演的角色。
+            </p>
+            <ul class="card-text">
+              <li><strong>2017 年</strong>　電腦少女小白、未來明、輝夜月等登場，概念擴大。</li>
+            </ul>
+
+            <p class="card-text"><strong>媒體與品牌應用</strong></p>
+            <ul class="card-text">
+              <li>電視節目：如《VIRTUAL BUZZ TALK!》《超人女子戰士 Gariben Girl V》。</li>
+              <li>企業／地方角色：燦鳥 Nomu、根羽清心、茨日和等。</li>
+            </ul>
+
+            <p class="card-text"><strong>產業發展</strong></p>
+            <ul class="card-text">
+              <li><strong>2018 年</strong>　VTuber 約 3000 人。</li>
+              <li><strong>2019 年</strong>　VTuber 約 6000 人。</li>
+              <li><strong>2021 年</strong>　VTuber 超過 16000 人。</li>
+            </ul>
+
+            <p class="card-text mb-1">組織與事務所：</p>
+            <ul class="card-text">
+              <li>Upd8 / Nijisanji（彩虹社） / hololive / VSPO!（卟啵電競） / Neo-Porte</li>
+            </ul>
+
+            <p class="card-text"><strong>社會認知與文化地位</strong><br>
+              <strong>2018 年</strong>　成為網路流行語金獎；<strong>2019 年</strong>　在年輕族群中具高知名度。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gawr Gura（有圖） -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <!-- 圖片放在 card-body 外，使用 card-img-top -->
+        <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
+        <div class="card-body">
+          <h5 class="card-title text-center">Gawr Gura</h5>
+          <p class="card-text">
+            噶嗚·古拉（Gawr Gura）是英語 VTuber，隸屬 hololive production。以歌回與音樂遊戲見長，出道後迅速累積訂閱，曾為社內里程碑人物之一。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 練習檔案 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">練習檔案</h5>
+          <a href="example.html" class="btn btn-outline-primary btn-sm mt-2">練習檔案</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">導覽列 Navbar</h5>
+          <a href="navbar.html" class="btn btn-outline-primary btn-sm mt-2">Navbar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主視覺 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">主視覺區塊</h5>
+          <a href="mainContainer.html" class="btn btn-outline-primary btn-sm mt-2">主視覺區塊</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內容區 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">內容區</h5>
+          <a href="container.html" class="btn btn-outline-primary btn-sm mt-2">內容區</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 示範 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">Modal 圖片/網址路徑</h5>
+          <p class="mb-2 small text-muted">建議用相對路徑或 Raw 連結。</p>
+          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#Modalimg">
+            開啟示範
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal（把絕對 /RWD/ 改成相對路徑示例） -->
+  <div class="modal" id="Modalimg" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal IMG</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- 這裡用 Gawr_Gura.png 當示範，也可換成你的 jiao.jpg -->
+              <div class="col-6"><img src="Gawr_Gura.png" class="img-fluid" alt="示範圖"></div>
+              <div class="col-6">文字說明</div>
             </div>
+          </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
-<div class="col-md-4 mb-4">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <h5 class="card-title">歷史</h5>
-
-      <p class="card-text">
-        <strong>虛擬人物的起源</strong><br>
-        虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
-      </p>
-
-      <ul>
-        <li><strong>2002 年</strong>　美國電影《虛擬偶像》描述以電腦影像製作虛擬演藝人員。</li>
-        <li><strong>2012 年</strong>　小說《一級玩家》描繪人們以虛擬身分生活的情境。</li>
-        <li><strong>2007 年</strong>　初音未來的出現，證明虛擬偶像的可行性。</li>
-        <li><strong>2021 年</strong>　動畫電影《龍與雀斑公主》探討虛擬與現實的界線。</li>
-      </ul>
-
-      <p class="card-text">
-        <strong>國際發展</strong><br>
-        <strong>2019 年</strong>，虛擬 YouTuber 代表人物絆愛與奧斯卡得主及國際導演合作，象徵虛擬角色正式進入主流娛樂產業。
-      </p>
-
-      <ul>
-        <li><strong>2020 年</strong>　VTuber 佔據全球 SuperChat 打賞排行榜前十名的大多數席次。</li>
-        <li><strong>2022 年</strong>　VTuber 影片月觀看次數達到數十億次，影響力大幅提升。</li>
-      </ul>
-
-      <p class="card-text">
-        <strong>日本與名詞起源</strong><br>
-        <strong>2016 年</strong>　絆愛首次使用「虛擬 YouTuber」一詞，定義為透過動態捕捉與電腦圖形結合真人表演的角色。
-      </p>
-
-      <ul>
-        <li><strong>2017 年</strong>　電腦少女小白、未來明、輝夜月等角色登場，虛擬 YouTuber 的概念擴大。</li>
-      </ul>
-
-      <p class="card-text">
-        <strong>媒體與品牌應用</strong>
-      </p>
-      <ul>
-        <li>登上電視節目（如《VIRTUAL BUZZ TALK!》、《超人女子戰士 Gariben Girl V》）。</li>
-        <li>企業推出品牌 VTuber，例如燦鳥 Nomu、根羽清心、茨日和。</li>
-      </ul>
-
-      <p class="card-text">
-        <strong>產業發展</strong>
-      </p>
-      <ul>
-        <li><strong>2018 年</strong>　VTuber 約 3000 人，訂閱數超過千萬。</li>
-        <li><strong>2019 年</strong>　VTuber 約 6000 人。</li>
-        <li><strong>2021 年</strong>　VTuber 超過 16000 人，產業規模迅速成長。</li>
-      </ul>
-
-      <p class="card-text">
-        組織與事務所：
-      </p>
-      <ul>
-        <li>Upd8</li>
-        <li>Nijisanji（彩虹社）</li>
-        <li>hololive</li>
-        <li>VSPO!（卟啵電競）</li>
-        <li>Neo-Porte</li>
-      </ul>
-
-      <p class="card-text">
-        <strong>社會認知與文化地位</strong><br>
-        <strong>2018 年</strong>，「虛擬 YouTuber」成為網路流行語金獎。
-      </p>
-      <ul>
-        <li><strong>2019 年</strong>　根據調查，VTuber 在 10–29 歲族群中擁有極高知名度。</li>
-      </ul>
-
-      <p class="text-muted small">
-        提示：可結合 Bootstrap Collapse 讓內容更精簡，適合長內容卡片。
-      </p>
+      </div>
     </div>
   </div>
-</div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
-            <h5 class="card-title">Gawr Gura</h5>
-            <p class="card-text">噶嗚·古拉是一位英語虛擬YouTuber，隸屬hololive production。於2020年9月13日在YouTube初配信，主要擅長音樂遊戲和歌回為主。在出道40天後到達100萬訂閱數。為社內第一人，同時也是訂閱數第一的虛擬Youtuber。已於2025年5月1日畢業。</p>
-            <p class="text-muted small"></p>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">練習檔案</h5>
-            <a href="/RWD/example.html" class="btn btn-outline-primary btn-sm mt-2">練習檔案</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">導覽列 Navbar</h5>
-            <a href="/RWD/navbar.html" class="btn btn-outline-primary btn-sm mt-2">Navbar</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">主視覺區塊</h5>
-            <a href="/RWD/mainContainer.html" class="btn btn-outline-primary btn-sm mt-2">主視覺區塊</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-            <h5 class="card-title">內容區</h5>
-            <a href="/RWD/container.html" class="btn btn-outline-primary btn-sm mt-2">內容區</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Modal 圖片/網址路徑</h5>
-                本機：圖片.jpg<br>
-                Github：/RWD/圖片.jpg <br>
-                [RWD 改成 自己的儲存空間名稱]<br>
-                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#Modalimg">
-                了解更多
-                </button>
-            </div>
-        </div>
-        </div>
-
-        <div class="modal" id="Modalimg" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Modal IMG</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6"><img src="/RWD/jiao.jpg" width="200"></div>
-                        <div class="col-6">文字</div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </section>
-
-
-    <!-- 頁尾 -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
+</section>
