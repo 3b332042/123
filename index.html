@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RWD</title>
   <!-- Bootstrap 5 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    .card-img-top {
-      height: 220px;
-      object-fit: cover;
-    }
-    .card .card-text {
-      text-align: left;
-    }
+    .card-img-top { height: 220px; object-fit: cover; }
+    .card .card-text { text-align: left; }
   </style>
 </head>
 <body>
@@ -47,16 +42,16 @@
     </div>
   </section>
 
-  <!-- Modal -->
-  <div class="modal" id="exampleModal" tabindex="-1">
+  <!-- 頁面總覽 Modal（保留） -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">了解</h5>
+          <h5 class="modal-title" id="exampleModalLabel">了解</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>這裡可以放更多介紹內容。</p>
+          <p>這裡可以放更多整體介紹內容。</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -69,21 +64,24 @@
   <section class="container my-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-      <!-- 起源 -->
+      <!-- 起源（卡片＋了解更多 Modal 按鈕） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title text-center">起源</h5>
             <p class="card-text">
-              虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
-              電影與小說描繪了人們以虛擬身分生活的情境；虛擬偶像則顯示以虛擬角色作為媒體主體的可行性，並讓動漫畫風格成為主流形式之一。
-              動畫作品也探討了虛擬與現實的邊界與互動，反映虛擬演藝者在平台上的處境。
+              虛擬人物概念始於網名／頭像，線上遊戲與賽博龐克推動虛擬形象發展……
             </p>
+            <div class="text-end">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalOrigin">
+                了解更多
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 歷史 -->
+      <!-- 歷史（保留原本的收合） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -92,7 +90,6 @@
               <strong>虛擬人物的起源</strong><br>
               虛擬人物的概念起源於網路早期的網名與頭像。線上遊戲角色與賽博龐克作品進一步拓展了虛擬形象的應用。
             </p>
-
             <a class="btn btn-outline-primary btn-sm mb-3" data-bs-toggle="collapse" href="#histMore" role="button" aria-expanded="false" aria-controls="histMore">
               展開更多
             </a>
@@ -133,22 +130,81 @@
         </div>
       </div>
 
-      <!-- Gawr Gura -->
+      <!-- Gawr Gura（卡片＋了解更多 Modal 按鈕，Modal 內左圖右文） -->
       <div class="col">
         <div class="card h-100 shadow-sm">
           <img src="Gawr_Gura.png" class="card-img-top" alt="Gawr Gura">
           <div class="card-body">
             <h5 class="card-title text-center">Gawr Gura</h5>
             <p class="card-text">
-              噶嗚·古拉（Gawr Gura）是英語 VTuber，隸屬 hololive production。
-              以歌回與音樂遊戲見長，出道後迅速累積訂閱，曾為社內里程碑人物之一。
+              英語 VTuber，隸屬 hololive production；以歌回與音樂遊戲見長……
             </p>
+            <div class="text-end">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalGura">
+                了解更多
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
   </section>
+
+  <!-- 起源：詳情 Modal -->
+  <div class="modal fade" id="modalOrigin" tabindex="-1" aria-labelledby="modalOriginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">  <!-- 大一點，看得舒服 -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalOriginLabel">起源 — 詳細內容</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0">
+            虛擬人物的概念起源於網路發展早期的網名和頭像。線上遊戲的角色和賽博龐克的科幻作品進一步推展虛擬形象的功能。
+            美國電影《虛擬偶像》描述以電腦影像打造虛擬演藝人員；小說《一級玩家》刻畫人們在虛擬世界以化身生活。
+            初音未來顯示以虛擬偶像為內容核心的可行性，並讓動漫畫風格成為主流形式之一。
+            動畫《龍與雀斑公主》探討虛擬與現實身分的邊界、網路與現實的互動，以及虛擬演藝者在平台上的處境。
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gawr Gura：詳情 Modal（左圖右文） -->
+  <div class="modal fade" id="modalGura" tabindex="-1" aria-labelledby="modalGuraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalGuraLabel">Gawr Gura — 詳細內容</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row g-3 align-items-start">
+              <div class="col-md-6 text-center">
+                <!-- 也可改成 raw 連結避免相對路徑問題 -->
+                <img src="Gawr_Gura.png" class="img-fluid rounded" alt="Gawr Gura">
+              </div>
+              <div class="col-md-6">
+                <p>
+                  噶嗚·古拉（Gawr Gura）為英語系 VTuber，隸屬 hololive production。
+                  以歌回與音樂遊戲見長，出道後迅速累積訂閱，成為社內里程碑人物之一。
+                  其內容風格輕鬆活潑、互動性強，象徵 VTuber 國際化的重要代表。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 頁尾 -->
   <footer class="bg-dark text-white text-center py-3">
